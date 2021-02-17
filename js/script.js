@@ -1,10 +1,9 @@
 // const resultsContainer = document.querySelector(".results");
 const url = 'https://api.pokemontcg.io/v2/cards/';
 
-document.querySelector('.loading').innerHTML = 
-    `
-    <img src="https://cdn.dribbble.com/users/621155/screenshots/2835314/simple_pokeball.gif"/>
-    `;
+document.querySelector('.loading').innerHTML = `<img src="https://cdn.dribbble.com/users/621155/screenshots/2835314/simple_pokeball.gif"/>`;
+
+document.querySelector('#search').classList.add('hide');
 
 async function getPokemon() {
 	try {
@@ -36,6 +35,7 @@ async function getPokemon() {
       document.querySelector('.alert').innerHTML = ``;
     }, 3000)
   }
+  document.querySelector('#search').classList.remove('hide');
   document.querySelector('.loading').innerHTML = ``;
 }
 getPokemon();

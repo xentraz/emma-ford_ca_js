@@ -11,25 +11,14 @@ body {
 
 main {
   grid-area: 'main';
-  width: 90%;
+  width: 95%;
   margin: auto;
-}
 
-header {
-  height: 100px;
   display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
-}
-
-header #search {
-  height: 30px;
-  width: 150px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  color: rgb(0, 0, 0);
-  border-radius: 5px;
 }
 
 .loading {
@@ -52,72 +41,4 @@ header #search {
   border: solid 1px red;
   padding: 20px;
   transition: 2s;
-}
-
-.pokiCards {
-  width: 350px;
-  padding: 10px;
-  margin: 10px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  box-shadow: 4px 4px 6px #444444;
-  border-radius: 5px;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.info {
-  width: 90%;
-  padding: 20px;
-  margin: 10px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  box-shadow: 4px 4px 6px #444444;
-  border-radius: 5px;
-
-  display: inline-flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.info p {
-  padding: 0px;
-  margin: 10px;
-  margin-left: 0px;
-}
-
-.level p {
-  padding: 0px;
-  margin: 10px;
-  margin-left: 0px;
-}
-
-.attacks {
-  width: 90%;
-  padding: 20px;
-  margin: 10px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  box-shadow: 4px 4px 6px #444444;
-  border-radius: 5px;
-
-  display: inline-flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-a {
-  height: 30px;
-  width: 150px;
-  border: 1px solid black;
-  color: black;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
 }

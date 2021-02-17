@@ -1,0 +1,13 @@
+/* Style Sheets */
+@import '/css/Partials/footer.css';
+@import '/css/Partials/header.css';
+
+@import '/css/Partials/index.css';
+
+@import '/css/Partials/details.css';
+
+/* General Styles */
+@import '/css/styles.css';
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Roboto+Mono:wght@100&display=swap');

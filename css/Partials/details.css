@@ -1,5 +1,55 @@
+.deatils {
+  background-color: #181b1d;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+.detailsInfo {
+  grid-area: 'main';
+  width: 95%;
+  margin: auto;
+
+  display: grid;
+  grid-template-rows: 0.5fr 2fr 1.5fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pokeName {
+  grid-column: 1/4;
+  grid-row: 1/1;
+
+  padding: 20px;
+  margin: 10px;
+
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  box-shadow: 4px 4px 6px #444444;
+  border-radius: 5px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pokeName h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 3px;
+}
+
 .info {
-  width: 90%;
+  grid-column: 1/1;
+  grid-row: 2/2;
+
   padding: 20px;
   margin: 10px;
   background-color: #ffffff;
@@ -8,7 +58,24 @@
   border-radius: 5px;
 
   display: inline-flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pokeImg {
+  grid-column: 2/2;
+  grid-row: 2/2;
+
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  box-shadow: 4px 4px 6px #444444;
+  border-radius: 5px;
+
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -16,17 +83,16 @@
 .info p {
   padding: 0px;
   margin: 10px;
-  margin-left: 0px;
-}
 
-.level p {
-  padding: 0px;
-  margin: 10px;
-  margin-left: 0px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .attacks {
-  width: 90%;
+  grid-column: 3/3;
+  grid-row: 2/2;
+
   padding: 20px;
   margin: 10px;
   background-color: #ffffff;
@@ -35,7 +101,63 @@
   border-radius: 5px;
 
   display: inline-flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.attacks p {
+  text-align: center;
+  padding: 0px;
+  margin: 10px;
+
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.attacks p span {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.setInfo {
+  grid-column: 1/4;
+  grid-row: 3/3;
+
+  padding: 20px;
+  margin: 10px;
+
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  box-shadow: 4px 4px 6px #444444;
+  border-radius: 5px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.setInfo p {
+  text-align: center;
+  padding: 0px;
+  margin: 10px;
+
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.setInfo p span {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.setInfo img {
+  max-height: 150px;
 }

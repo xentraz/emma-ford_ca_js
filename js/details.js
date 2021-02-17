@@ -4,7 +4,10 @@ const id = params.get('id');
 
 const url = 'https://api.pokemontcg.io/v2/cards/' + id;
 
-console.log(id); 
+document.querySelector('.loading').innerHTML = `<img src="https://cdn.dribbble.com/users/621155/screenshots/2835314/simple_pokeball.gif"/>`;
+document.querySelector('header').classList.add('hide');
+document.querySelector('.detailsInfo').classList.add('hide');
+
 
 async function getPokemon() {
 	try {
@@ -14,10 +17,15 @@ async function getPokemon() {
     console.log(pokiResults);
    
     document.title = `${pokiResults.name}`;
-
-    document.querySelector('h1').innerHTML = `${pokiResults.name}`;
-    document.querySelector('.img').innerHTML = `<img src="${pokiResults.images.small}"/>`;
     
+    document.querySelector('.pokeName').innerHTML = 
+    `
+    <h1>${pokiResults.name}</h1>
+    `;
+    document.querySelector('.pokeImg').innerHTML = 
+    `
+    <img src="${pokiResults.images.small}"/>
+    `;
     document.querySelector('.info').innerHTML = 
     `
     <p>Artist: ${pokiResults.artist}</p>
@@ -35,12 +43,20 @@ async function getPokemon() {
       document.querySelector('.attacks').innerHTML += 
       `
       <div class=attacks">
-      <p>Attack Name: ${attacks[i].name}</p>
-      <p>Attack Damage: ${attacks[i].damage}</p>
+      <p><span>Attack Name:</span> ${attacks[i].name}</p>
+      <p><span>Attack Damage:</span> ${attacks[i].damage}</p>
       <p>Info: ${attacks[i].text}</p>
       </div>
       `;
     }
+
+    document.querySelector('.setInfo').innerHTML = 
+    `
+    <p><span>Set Name: </span>${pokiResults.set.name}</p>
+    <p><span>Set Total: </span>${pokiResults.set.total}</p>
+    <p><span>Release Date: </span>${pokiResults.set.releaseDate}</p>
+    <img src="${pokiResults.set.images.logo}"/>
+    `;
 
 	}  catch (error) {
     document.querySelector('.alert').innerHTML = showAlertToUser (
@@ -52,5 +68,8 @@ async function getPokemon() {
       document.querySelector('.alert').innerHTML = ``;
     }, 3000)
   }
+  document.querySelector('.loading').innerHTML = ``;
+  document.querySelector('header').classList.remove('hide');
+  document.querySelector('.detailsInfo').classList.remove('hide');
 }
 getPokemon();

@@ -53,8 +53,8 @@ header {
   margin-right: 5px;
 }
 
-/* .searchForm {
-  grid-column: 3/3;
+.searchForm {
+  grid-column: 2/2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -81,4 +81,4 @@ header {
   border: 1px solid black;
   color: rgb(0, 0, 0);
   border-radius: 5px;
-} */
+}

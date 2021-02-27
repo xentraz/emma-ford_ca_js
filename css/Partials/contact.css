@@ -1,0 +1,24 @@
+.form_div {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form_div p {
+  color: #fff;
+
+  padding: 0px;
+  margin-top: 10px;
+
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form_div label {
+  color: #ffffff;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 1rem;
+}

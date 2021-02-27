@@ -53,10 +53,6 @@ async function pokeSearch() {
       document.querySelector('main').innerHTML = '';
 
       filteredArray.forEach((element) => {
-        document.querySelector('header').innerHTML += 
-        `
-        <p>Please press enter to refresh</p>
-        `;
 
           document.querySelector('main').innerHTML += 
           `

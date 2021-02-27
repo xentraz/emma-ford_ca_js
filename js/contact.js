@@ -35,6 +35,14 @@ submit.onclick = function (event) {
 	} else {
 		addressError.style.display = 'block';
 	}
+
+  if (testLen(name, 0) || testLen(subject, 10) || testEmail(email) || testLen(address, 25)) {
+    // document.querySelector('.form_div').style.display = 'none';
+    document.querySelector('.val_comp').innerHTML = 
+    `
+    <p>Thank you for contacting us. We will get back to you shortly!</p>
+    `;
+	} 
 };
 
 function testLen(val, lenToTest) {

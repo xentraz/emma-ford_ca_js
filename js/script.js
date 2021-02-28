@@ -1,7 +1,9 @@
 let pokemonApi = [];
 
 document.querySelector('.loading').innerHTML = `<img src="https://cdn.dribbble.com/users/621155/screenshots/2835314/simple_pokeball.gif"/>`;
+// Loading Gif taken from https://dribbble.com/shots/2835314-Pokeball-Animation 
 document.querySelector('header').classList.add('hide');
+document.querySelector('footer').classList.add('hide');
 
 async function pokeSearch() {
   try {
@@ -77,6 +79,7 @@ async function pokeSearch() {
   }
   document.querySelector('.loading').innerHTML = ``;
   document.querySelector('header').classList.remove('hide');
+  document.querySelector('footer').classList.remove('hide');
 }
 pokeSearch();
 

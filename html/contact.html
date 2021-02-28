@@ -14,8 +14,8 @@
     <div class="logo"><img src="/img/pokemon-logo.png" alt="Pokemon Logo" class="logoImg"></div>
     <div class="menu">
       <ul>
-        <li><a href="/index.html"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="/html/contact.html"><i class="fas fa-question-circle"></i> Contact</a></li>
+        <li><a href="/index.html"> Home</a></li>
+        <li><a href="/html/contact.html">Contact</a></li>
       </ul>
     </div>
   </header>
@@ -24,28 +24,50 @@
   <main>
     <div class="val_comp"></div>
     <div class="form_div">
-      <p>Need help with something? Contact us!</p>
+      <div class="contact_us">
+        <p>Need help with something? Contact us!</p>
+      </div> 
       <form class="conact_form">
         <label for="name">Name:</label>
-        <input type="text" name="name" id="name" />
-        <p class="error nameError">Please enter a first name</p>
+					<input type="text" name="name" id="name" />
+					<p class="error nameError">Please enter a first name</p>
 
-        <label for="lastname">Subject:</label>
-        <input type="text" name="subject" id="subject" />
-        <p class="error subjectError">Please write something...</p>
+					<label for="lastname">Subject:</label>
+					<input type="text" name="subject" id="subject" />
+					<p class="error subjectError">Please write something...</p>
 
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email" />
-        <p class="error emailError">Please enter a valid email address</p>
+					<label for="email">Email:</label>
+					<input type="text" name="email" id="email" />
+					<p class="error emailError">Please enter a valid email address</p>
 
-        <label for="address">Address:</label>
-        <input type="text" name="address" id="address" />
-        <p class="error addressError">Please enter your address</p>
+          <label for="address">Address:</label>
+					<input type="text" name="address" id="address" />
+					<p class="error addressError">Please enter your address</p>
 
-        <button id="submit">Submit</button>
+					<button id="submit">Submit</button>
       </form>
     </div>
   </main>
+  <footer>
+    <div class="footer-container">
+        <div class="copyright">
+            <p>&copy; Pokemon Api Deatils Search 2020</p>
+        </div>
+        <div class="social-media">
+            <p><i class="fab fa-twitter-square"></i></p>
+            <p><i class="fab fa-facebook-square"></i></p>
+            <p><i class="fab fa-instagram-square"></i></p>
+            <p><i class="fab fa-youtube-square"></i></p>
+        </div>
+        <div class="about-us">
+            <ul>
+                <li><span>About Us</span></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/html/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+  </footer>
   <script src="/js/components/alert.js"></script>
   <script src="/js/contact.js"></script>
 </body>

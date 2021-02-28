@@ -16,6 +16,7 @@ header {
 
 .logoImg {
   height: 100px;
+  cursor: pointer;
 }
 
 .menu {

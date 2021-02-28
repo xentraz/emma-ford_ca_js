@@ -42,6 +42,8 @@ submit.onclick = function (event) {
 		`
 		<p>Thank you for contacting us. We will get back to you shortly!</p>
 		`;
+
+		document.querySelector('.contact_us').innerHTML =``;
 	} 
 };
 

@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  padding: 0px;
 }
 
 .val_comp p {
@@ -43,11 +45,17 @@ input {
   font-size: 0.8rem;
 }
 
-.contact_us p {
-  color: #fff;
+.contact_us {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   padding: 0px;
-  margin-top: 10px;
+}
+
+.contact_us p {
+  color: #fff;
 
   font-family: 'Roboto Mono', monospace;
   font-weight: 600;

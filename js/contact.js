@@ -1,4 +1,5 @@
 const submit = document.querySelector('#submit');
+
 const nameError = document.querySelector('.nameError');
 const subjectError = document.querySelector('.subjectError');
 const emailError = document.querySelector('.emailError');

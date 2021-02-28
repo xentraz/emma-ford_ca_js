@@ -60,3 +60,5 @@ function testEmail(emailAddress) {
 	console.log(result);
 	return result;
 }
+
+// Why is the error message there before you start typing.. this does not happen when I try this on another repo?

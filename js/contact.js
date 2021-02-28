@@ -63,4 +63,4 @@ function testEmail(emailAddress) {
 	return result;
 }
 
-// Why is the error message there before you start typing.. this does not happen when I try this on another repo?
+// Why is the error message there before you start typing.. this does not happen when I try this in another repo?

@@ -32,6 +32,7 @@ async function pokeSearch() {
     searchText.onkeyup = function (event) {
       event.preventDefault();
       console.log(event.target.value);
+      
       let filteredArray = pokemonApi.filter((value) => {
           return value.name.toLowerCase() === event.target.value.toLowerCase();
       });

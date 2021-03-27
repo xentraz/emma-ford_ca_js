@@ -56,8 +56,7 @@ async function pokeSearch() {
       document.querySelector('main').innerHTML = '';
 
       filteredArray.forEach((element) => {
-
-          document.querySelector('main').innerHTML += 
+      document.querySelector('main').innerHTML += 
           `
         <div class="pokiCards">
         <h1>${element.name}</h1>

@@ -32,6 +32,7 @@ async function pokeSearch() {
     searchText.onkeyup = function (event) {
       event.preventDefault();
       console.log(event.target.value);
+      
       let filteredArray = pokemonApi.filter((value) => {
           return value.name.toLowerCase() === event.target.value.toLowerCase();
       });
@@ -55,8 +56,7 @@ async function pokeSearch() {
       document.querySelector('main').innerHTML = '';
 
       filteredArray.forEach((element) => {
-
-          document.querySelector('main').innerHTML += 
+      document.querySelector('main').innerHTML += 
           `
         <div class="pokiCards">
         <h1>${element.name}</h1>
@@ -130,3 +130,101 @@ pokeSearch();
 //   document.querySelector('header').classList.remove('hide');
 // }
 // getPokemon();
+
+
+
+
+// const charityCards = (charityArray) => {
+// 	const mainElm = document.querySelector('.charityList');
+// 	charityArray.map(({image, link, name, description, number}) => {
+// 		mainElm.innerHTML += 
+// 		`
+// 		<div class="flip flip-card">
+//       <div class="card">
+//         <div class="charity_card charity_card-front">
+// 					<div class="displayCards">
+// 						<h2>${name}</h2>
+// 						<img src="${image}"/>
+// 						<p>${link}</p>
+// 					</div>
+// 				</div>
+
+//         <div class="charity_card charity_card-back">
+// 					<div class="displayCards">
+// 						<h2>${name}</h2>
+// 						<p>${description}</p>
+// 						<p>${link}</p>
+// 						<p>Organisation Number: ${number}</p>
+// 					</div>
+// 				</div>
+//       </div>
+//     </div>
+// 	`;
+// 	});
+// };
+
+// Card Flip Test 1
+
+// function cardFlipper() {
+// 	var flippedCards = document.querySelector('.card');
+// 	for (var i = 0; i < flippedCards.length; i++) {
+// 		flippedCards[i].addEventListener('click', toggleFlip);
+// 	}
+// }
+
+// function toggleFlip() {
+// 	this.classList.toggle('.is-flipped')
+// }
+
+// cardFlipper();
+
+// CardFlip Test 2:
+
+// let card = document.querySelector('.card');
+// for (i = 0; i < card; i++) {
+// card.addEventListener('click', (event) => {
+// 	if (event.target.classList.contains !== '.is-flipped'){
+// 		card.classList.add('is-flipped');
+// 	} else {
+// 		card.classList.remove('is-flipped');
+// 	}
+// })
+// }
+
+// Card Flip Test 3:
+
+// let card = document.querySelector('.card');
+// 	card.addEventListener('click', function() {
+// 	card.classList.toggle('is-flipped');
+// 	});
+
+
+
+// const charityCards = (charityArray) => {
+// 	const mainElm = document.querySelector('.charity_card-front');
+// 	charityArray.map(({image, link, name}) => {
+// 		mainElm.innerHTML += `
+// 		< class="displayCards">
+// 				<h2>${name}</h2>
+// 				<img src="${image}"/>
+// 				<p>${link}</p>
+// 		</>
+// 	`;
+// 	});
+// };
+
+// const charityCards2 = (charityArray) => {
+// 	const mainElm = document.querySelector('.charity_card-back');
+// 	charityArray.map(({description, link, name, number}) => {
+// 		mainElm.innerHTML += `
+// 		<div class="displayCards">
+// 				<h2>${name}</h2>
+// 				<p>${description}</p>
+// 				<p>${link}</p>
+// 				<p>Organisation Number: ${number}</p>
+// 		</div>
+// 	`;
+// 	});
+// };
+
+
